@@ -16,7 +16,7 @@ const AddTodo = () => {
     id:new Date().getMilliseconds(),
     add
   }
-  if(add == ""){
+  if(add ===""){
     alert('cannot be empty')
   }else{
     dispatch(addval(data))
