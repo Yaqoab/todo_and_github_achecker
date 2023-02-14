@@ -1,19 +1,32 @@
-h2{
+.head{
     font-size: 5em;
     font-family: serif;
-    color:#008000;
+    color:rgb(207, 207, 233);
     text-align: center;
     animation: animate 1.5s linear infinite;
   } 
-   
+  
   @keyframes animate{
-    0%{
-      opacity: 0;
-    }
-    50%{
-      opacity: 0.7;
-    }
-    100%{
-      opacity: 0;
-    }
+    0%{color: rgb(22, 112, 148);}
+    10%{color: green;}
+    20%{color: yellow;}
+    30%{color: rgb(73, 199, 23);}
+    40%{color: rgb(96, 87, 209);}
+    50%{color: rgb(231, 80, 181);}
+    70%{color: rgba(241, 32, 119, 0.925);}
   }
+  .alert-blink{
+    animation:blink 1s;
+    animation-iteration-count: infinite;
+  }
+    @keyframes blink {
+      /* 60%{border-color:red} */
+      0%{color: rgb(22, 112, 148);}
+    10%{border-color: green;}
+    20%{border-color: yellow;}
+    30%{border-color: rgb(73, 199, 23);}
+    40%{border-color: rgb(96, 87, 209);}
+    50%{border-color: rgb(231, 80, 181);}
+    70%{border-color: rgba(241, 32, 119, 0.925);}
+    }
+  

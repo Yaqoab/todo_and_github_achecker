@@ -1,34 +1,69 @@
-import { Box, Flex, Image, VStack } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Text, VStack } from "@chakra-ui/react";
+import { useEffect, useRef, useState } from "react";
 import "./blink.css"
 
 const Birthday = () => {
+const [text, setText]=useState('');
+const [fulltext, setfullText]=useState("May you recieve the greatest of joy and everlasting bliss. You are gift yourself and deserve the best of everything. Happy birthday ")
+const initialState=0;
+const [count, setCount]=useState(0);
+
+useEffect(()=>{
+    if(count < fulltext.length){
+        setTimeout(() => {
+            setText(text + fulltext[count]);
+            setCount(count + 1)
+        }, 50);
+    }
+},[text]);
+
+const musicUrl=new Audio('happyBirthday.mp3')
+const music=()=>{
+    musicUrl.play()
+}
+
+
     return ( 
     <Flex
+    className='alert-blink'
      margin='0 auto'
      mb='10px'
-     border='1px solid lightgray'
-      width={['90%','45%']}
+     top='0px'
+     border='4px solid lightgray'
+      width={['100%','45%']}
      height='85vh'
-    //  padding='10px'
     justifyContent='center'
      borderRadius='6px'
      bgGradient="url(fatimah.jpg)"
      backgroundRepeat='no-repeat'
-     backgroundSize={['90%','90%']}  
-     backgroundPosition='center'  
+     backgroundSize='100%'  
+     backgroundPosition='center' 
+     position='relative' 
+     onClick={music}
      >
      <VStack>
-        <Box width={['85%','50%']}>
-        <Image 
-         //src='birthday-cake.png'
-        // src='fatimah.jpg'
+        <Box padding='10px' bg='rgba(80, 89, 106, 0.5)' margin='10px' borderRadius='6px'>
+        <Heading
+        className='head'
+        size='md'
+        >Happy Birthday Fatimah</Heading>
+        </Box>
+        <Text 
+        color='rgb(207, 207, 233)' 
+        bg='rgba(80, 89, 106, 0.5)' 
+        padding='5px'
+        fontWeight='40px'
+        textAlign='center'>{text}</Text>
+         <Image 
+         src='birthday-cake.png'
+         position='absolute'
+         bottom='0px'
+         width='130px'
          objectFit={'cover'}
          />
-        </Box>
-         <Box>Happy Birthday Fatimah</Box>
-        <h2>blinking note</h2>
-        
+         
      </VStack>
+     
     </Flex> 
     );
 }
