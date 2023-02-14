@@ -9,6 +9,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import addSlice from './components/slices/addSlice';
 import Home from './components/home';
 import githubSlice from './components/slices/githubSlice';
+import Birthday from './components/birthday';
 // import userSlice from './practice/userslice';
 
 const store=configureStore({
@@ -29,6 +30,7 @@ function App() {
          <Route  path='/display'><DisplayTodo /></Route>
          <Route  path='/github'><CheckGithub /></Route>
          <Route  path='/displayuser'><GithubDisplay /></Route>
+         <Route  path='/birthday'><Birthday /></Route>
           </Switch>
           </Provider>
           </ChakraProvider>
