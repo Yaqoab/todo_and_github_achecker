@@ -46,7 +46,7 @@ const music=()=>{
         <Heading
         className='head'
         size='md'
-        >Happy Birthday Fatimah</Heading>
+        >Happy Birthday Fatimah </Heading>
         </Box>
         <Text 
         color='rgb(207, 207, 233)' 
