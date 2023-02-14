@@ -4,7 +4,7 @@ import "./blink.css"
 
 const Birthday = () => {
 const [text, setText]=useState('');
-const [fulltext, setfullText]=useState("May you recieve the greatest of joy and everlasting bliss. You are gift yourself and deserve the best of everything. Happy birthday ")
+const [fulltext]=useState("May you recieve the greatest of joy and everlasting bliss. You are gift yourself and deserve the best of everything. Happy birthday ")
 const [count, setCount]=useState(0);
 
 useEffect(()=>{
@@ -14,7 +14,7 @@ useEffect(()=>{
             setCount(count + 1)
         }, 50);
     }
-},[text]);
+},[text,count]);
 
 const musicUrl=new Audio('happyBirthday.mp3')
 const music=()=>{
