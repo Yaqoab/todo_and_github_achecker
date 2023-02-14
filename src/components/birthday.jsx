@@ -1,11 +1,10 @@
 import { Box, Flex, Heading, Image, Text, VStack } from "@chakra-ui/react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import "./blink.css"
 
 const Birthday = () => {
 const [text, setText]=useState('');
 const [fulltext, setfullText]=useState("May you recieve the greatest of joy and everlasting bliss. You are gift yourself and deserve the best of everything. Happy birthday ")
-const initialState=0;
 const [count, setCount]=useState(0);
 
 useEffect(()=>{
@@ -21,8 +20,6 @@ const musicUrl=new Audio('happyBirthday.mp3')
 const music=()=>{
     musicUrl.play()
 }
-
-
     return ( 
     <Flex
     className='alert-blink'
