@@ -26,7 +26,7 @@ const Birthday = () => {
          />
         </Box>
          <Box>Happy Birthday Fatimah</Box>
-        <h2>blinking</h2>
+        <h2>blinking note</h2>
         
      </VStack>
     </Flex> 
