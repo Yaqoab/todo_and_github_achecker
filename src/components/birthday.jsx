@@ -14,7 +14,7 @@ useEffect(()=>{
             setCount(count + 1)
         }, 50);
     }
-},[text,count]);
+},[text,count,fulltext]);
 
 const musicUrl=new Audio('happyBirthday.mp3')
 const music=()=>{
