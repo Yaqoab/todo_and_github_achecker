@@ -28,7 +28,7 @@ const music=()=>{
      mb='10px'
      top='0px'
      border='4px solid lightgray'
-      width={['100%','45%']}
+      width={['98%','45%']}
      height='85vh'
     justifyContent='center'
      borderRadius='6px'
