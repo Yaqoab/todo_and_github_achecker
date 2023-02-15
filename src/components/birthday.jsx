@@ -20,6 +20,7 @@ const musicUrl=new Audio('happyBirthday.mp3')
 const music=()=>{
     musicUrl.play()
 }
+
     return ( 
     <Flex
     className='alert-blink'
@@ -51,6 +52,15 @@ const music=()=>{
         padding='5px'
         fontWeight='40px'
         textAlign='center'>{text}</Text>
+         <Text
+         color='rgb(207, 207, 233)' 
+        bg='rgba(80, 89, 106, 0.8)' 
+        padding='5px'
+        fontWeight='40px'
+        position='absolute'
+         bottom='120px'
+         borderRadius='6px'
+        >click to play music</Text>
          <Image 
          src='birthday-cake.png'
          position='absolute'
