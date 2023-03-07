@@ -4,7 +4,7 @@ import "./blink.css"
 
 const Birthday = () => {
 const [text, setText]=useState('');
-const [fulltext]=useState("May you recieve the greatest of joy and everlasting bliss. You are gift yourself and deserve the best of everything. Happy birthday ")
+const [fulltext]=useState("A yau 15 ga watan sha'aban (nisfu sha'aban) yake daidai da ranar da aka haifi maulana Sheikh Ibrahim ya'aqub al_zakzaky (h) da Imam Mahadi (af) ")
 const [count, setCount]=useState(0);
 
 useEffect(()=>{
@@ -32,7 +32,7 @@ const music=()=>{
      height='85vh'
     justifyContent='center'
      borderRadius='6px'
-     bgGradient="url(fatimah.jpg)"
+     bgGradient="url(Sheikh_zakzaky.jpg)"
      backgroundRepeat='no-repeat'
      backgroundSize='100%'  
      backgroundPosition='center' 
@@ -44,7 +44,7 @@ const music=()=>{
         <Heading
         className='head'
         size='md'
-        >Happy Birthday Fatimah </Heading>
+        >Happy Birthday Sheikh</Heading>
         </Box>
         <Text 
         color='rgb(207, 207, 233)' 
