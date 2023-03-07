@@ -29,7 +29,7 @@ const music=()=>{
      top='0px'
      border='4px solid lightgray'
       width={['98%','45%']}
-     height='85vh'
+     height='100vh'
     justifyContent='center'
      borderRadius='6px'
      bgGradient="url(Sheikh_zakzaky.jpg)"
